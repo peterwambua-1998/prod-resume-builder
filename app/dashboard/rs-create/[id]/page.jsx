@@ -361,7 +361,7 @@ const CreateResume = ({ params }) => {
             {
                 queryingForJobDesc ?
                     <div className='flex min-h-screen items-center justify-center flex-col'>
-                        <p>Gettings your resume ready, hang on!</p>
+                        <p>Getting your resume ready, hang on!</p>
                         <Loading />
                     </div>
                     :
@@ -416,7 +416,7 @@ const CreateResume = ({ params }) => {
                             <Memberships userId={firebase_user.uid} />
                             <Publications userId={firebase_user.uid} />
                         </div>
-                        <div className="md:col-span-3 p-10 ">
+                        <div className="md:col-span-3 pl-4 pr-4 md:pl-6 md:pr-6 pt-2 pb-2">
                             <Wrapper userId={firebase_user.uid} about={aboutAi} skills={skillsAi} />
                         </div>
 

@@ -84,7 +84,7 @@ const CoverLetter = () => {
                                     </Menu>
                                 </div>
                                 <div className="md:col-span-3">
-                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                         {
                                             coverLetters.map((resume, index) => (
                                                 <Card key={index} className="border-slate-500 bg-white">

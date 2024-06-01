@@ -33,8 +33,8 @@ const TemplateThree = ({ coverLetter, userId, coverLetterId }) => {
             <div className="flex flex-row-reverse mb-4">
                 <PdfGenerationTemplateThree userId={userId} addressTo={addressTo} coverLetterContent={coverLetter} />
             </div>
-            <div className="cover-letter-padding">
-                <div className="my-gradient text-black rounded pl-20 pt-5 pr-20 pb-5 text-sm ">
+            <div className="pt-5 pb-5 px-2 md:px-[4%] lg:px-[20%]">
+                <div className="my-gradient text-black rounded pl-4 pr-4 md:px-10 lg:px-20 pt-5 pb-5 text-sm ">
                     <div className="flex justify-between border-b-2 border-black pb-5">
                         <div>
                             {

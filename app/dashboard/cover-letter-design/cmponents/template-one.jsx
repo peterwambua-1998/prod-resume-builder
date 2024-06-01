@@ -31,15 +31,15 @@ const TemplateOne = ({ coverLetter, userId, coverLetterId }) => {
             <div className="flex flex-row-reverse mb-4">
                 <PdfGenerationTemplateOne userId={userId} addressTo={addressTo} coverLetterContent={coverLetter} />
             </div>
-            <div className="cover-letter-padding">
-                <div className="bg-slate-900 text-white rounded pl-20 pt-5 pr-20 pb-5 text-sm">
+            <div className="px-4 md:px-[4%] lg:px-[16%]">
+                <div className="bg-slate-900 text-white rounded pl-4 md:pl-10 lg:pl-20 pt-5 pr-2 md:pr-10 lg:pr-20 pb-5 text-sm">
                     <div className="flex justify-between  ">
                         <div>
                             {
                                 profile == null ? <Skeleton></Skeleton> : <p>{profile.professionTitle}</p>
                             }
                         </div>
-                        <div className="text-right">
+                        <div className="text-right text-xs md:text-sm lg:text-sm">
                             {
                                 profile == null ? <div><Skeleton></Skeleton><Skeleton></Skeleton><Skeleton></Skeleton></div> : <div>
                                     <p>{profile.location}</p>
@@ -51,7 +51,7 @@ const TemplateOne = ({ coverLetter, userId, coverLetterId }) => {
                         </div>
                     </div>
                     {/* name */}
-                    <div className="my-font-two mt-28 text-5xl font-bold">
+                    <div className="my-font-two mt-28 text-base md:text-2xl lg:text-5xl font-bold">
                         {
                             profile == null ? <Skeleton></Skeleton> : <p>{profile.full_name}</p>
                         }
@@ -60,13 +60,13 @@ const TemplateOne = ({ coverLetter, userId, coverLetterId }) => {
 
                     {/* to and cover letter content */}
                     <div className="grid grid-cols-4 mt-12">
-                        <div className="col-span-1">
-                            <p className="text-xs">to</p>
+                        <div className="col-span-1 text-[10px] md:text-sm">
+                            <p >to</p>
                             {
                                 addressTo == null ? <p>Not Provided</p> : <p>{addressTo}</p>
                             }
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-3 text-xs md:text-sm">
                             <p>06/12/2022</p>
                             <p className="mt-5">Dear {
                                 addressTo == null ? 'Not Provided' : `${addressTo}`

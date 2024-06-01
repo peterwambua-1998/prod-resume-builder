@@ -33,7 +33,7 @@ const TemplateFour = ({ coverLetter, userId, coverLetterId }) => {
             <div className="flex flex-row-reverse mb-4">
                 <PdfGenerationTemplateFour userId={userId} addressTo={addressTo} coverLetterContent={coverLetter} />
             </div>
-            <div className="cover-letter-padding-other">
+            <div className="pt-5 pb-5 px-2 md:px-[4%] lg:px-[20%]">
                 <div className="bg-white p-5">
                     {/* top area */}
                     <div className="flex justify-center mb-6">
@@ -41,10 +41,10 @@ const TemplateFour = ({ coverLetter, userId, coverLetterId }) => {
                         <div className="p-5 border-2 border-slate-500 w-[50%] text-center rounded-sm">
 
                             {
-                                profile == null ? <Skeleton></Skeleton> : <p className="text-2xl font-bold">{profile.full_name}</p>
+                                profile == null ? <Skeleton></Skeleton> : <p className="text-base md:text-2xl lg:text-2xl font-bold">{profile.full_name}</p>
                             }
                             {
-                                profile == null ? <Skeleton></Skeleton> : <p className="text-sm text-[#808080]">{profile.professionTitle}</p>
+                                profile == null ? <Skeleton></Skeleton> : <p className="text-xs md:text-sm lg:text-sm text-[#808080]">{profile.professionTitle}</p>
                             }
                         </div>
                         <div></div>
@@ -52,7 +52,8 @@ const TemplateFour = ({ coverLetter, userId, coverLetterId }) => {
 
 
                     {
-                        profile == null ? <div className="text-sm flex gap-4 justify-center mb-6"><Skeleton></Skeleton><Skeleton></Skeleton><Skeleton></Skeleton></div> : <div className="text-sm flex gap-4 justify-center mb-6">
+                        profile == null ? <div className="text-[10px] md:text-sm lg:text-sm flex gap-4 justify-center mb-6"><Skeleton></Skeleton><Skeleton></Skeleton><Skeleton></Skeleton></div> : 
+                        <div className="text-[10px] md:text-sm lg:text-sm flex gap-4 justify-center mb-6">
                             <p>{profile.location}</p>
                             <p>{profile.email}</p>
                             <p>{profile.phoneNumber}</p>
@@ -66,14 +67,14 @@ const TemplateFour = ({ coverLetter, userId, coverLetterId }) => {
                     {/* grid area */}
                     <div className="grid grid-cols-6">
                         <div className="col-span-2 ">
-                            <div className="border-r-2 w-[80%] h-[100%]">
-                                <p className="text-sm">To</p>
+                            <div className="border-r-2 w-[80%] h-[100%] text-xs md:text-sm lg:text-sm">
+                                <p className="">To</p>
                                 <p>{
                                     addressTo == null ? 'Not Provided' : `${addressTo}`
-                                },</p>
+                                }</p>
                             </div>
                         </div>
-                        <div className="col-span-4 text-sm">
+                        <div className="col-span-4 text-xs md:text-sm lg:text-sm">
                             <p className="mb-2 text-[#808080]">03/31/2024</p>
                             <p className="mb-2">Dear {
                                 addressTo == null ? 'Not Provided' : `${addressTo}`

@@ -228,7 +228,7 @@ const CreateResume = () => {
 
                 <Accordion defaultChecked className="bg-amber-400 text-black mb-3">
                     <Accordion.Title className="text-xl font-medium text-black">
-                        <p className="text-base font-semibold">Ai Suggestions</p>
+                        <p className="text-base font-semibold">AI Suggestions</p>
                     </Accordion.Title>
                     <Accordion.Content>
                         <div className="form-control w-full grow">

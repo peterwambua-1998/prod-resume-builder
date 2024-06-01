@@ -35,7 +35,7 @@ import TempFive from "./temp5";
 
 const Wrapper = ({userId, about, skills}) => {
     return (
-            <div>
+            <div >
                 {/* tabs */}
                 <Tabs>
                     <TabList className='flex gap-4 bg-blue-950 p-3 rounded-lg mb-5 text-sm overflow-x-auto'>

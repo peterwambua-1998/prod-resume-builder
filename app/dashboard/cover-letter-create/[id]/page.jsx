@@ -299,7 +299,7 @@ const CoverLetter = ({ params }) => {
         <div className={"my-resume-bg " + viewHeight + ""}>
             {
                 queryingForJobDesc ?
-                    <div className='text-center pt-[20%]'>
+                    <div className='flex min-h-screen items-center justify-center flex-col'>
                         <p>Getting your cover letter ready, hang on!</p>
                         <Loading />
                     </div>
@@ -327,7 +327,7 @@ const CoverLetter = ({ params }) => {
                         </div>
 
                         :
-                        <div className="md:grid md:grid-cols-4 bg-slate-200">
+                        <div className="md:grid md:grid-cols-7 lg:grid lg:grid-cols-4 bg-slate-200">
                             <div className="absolute right-0 top-3">
                                 {
                                     showSaveAlert ?
@@ -339,13 +339,13 @@ const CoverLetter = ({ params }) => {
                                         : ''
                                 }
                             </div>
-                            <div className="bg-white pt-2 pl-5 pr-5 ">
-                                <div className='mb-8'>
+                            <div className="bg-white md:col-span-2 lg:col-span-1 h-[30vh] overflow-y-auto md:h-[100%] pt-2 pl-5 pr-5 ">
+                                <div className='mb-4'>
                                     <Button className='bg-green-400 hover:bg-green-500 text-black border-slate-400 w-full' onClick={initiateSave}>Save Resume</Button>
                                 </div>
                                 <Accordion defaultChecked className="bg-amber-400 text-black mb-3">
                                     <Accordion.Title className="text-xl font-medium text-black">
-                                        <p className="text-base font-semibold">Ai Content suggestions</p>
+                                        <p className="text-base font-semibold">AI Content suggestions</p>
                                     </Accordion.Title>
                                     <Accordion.Content>
                                         <div className="form-control w-full grow">
@@ -372,8 +372,7 @@ const CoverLetter = ({ params }) => {
                                 </Accordion>
                             </div>
 
-                            <div className="md:col-span-3">
-
+                            <div className="md:col-span-5 lg:col-span-3">
                                 <div>
                                     <WrapperCoverLetter coverLetter={coverLetterAi} userId={firebase_user.uid} coverLetterId={params.id} />
                                 </div>

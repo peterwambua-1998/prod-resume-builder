@@ -1,9 +1,6 @@
 'use client'
 import { Navbar, Menu, Button, Dropdown } from 'react-daisyui';
 import Image from "next/image";
-import profileImage from '@/app/images/profile.jpeg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocation, faLocationArrow, faMailBulk, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
