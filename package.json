@@ -1,0 +1,43 @@
+{
+  "name": "resume-builder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+   
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "dotenv": "^16.4.5",
+    "file-saver": "^2.0.5",
+    "firebase": "^10.7.2",
+    "got": "^14.2.1",
+    "intasend-node": "^1.0.8",
+    "jspdf": "^2.5.1",
+    "next": "14.1.0",
+    "next-nprogress-bar": "^2.3.5",
+    "node-fetch": "^2.7.0",
+    "oauth-1.0a": "^2.2.6",
+    "openai": "^4.26.0",
+    "puppeteer": "^22.6.5",
+    "react": "^18",
+    "react-daisyui": "^5.0.0",
+    "react-dom": "^18",
+    "react-dropzone": "^14.2.3",
+    "react-firebase-hooks": "^5.1.1",
+    "react-tabs": "^6.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}

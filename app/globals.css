@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    
+  }
+} */
+
+
+html {
+  background-color: #ffff !important;
+}
+
+body {
+  color: #1E1E1E;
+  background: #ffff;
+}
+
+.m-vbody {
+  font-family: "Inter", sans-serif !important;
+}
+
+.my-resume-bg {
+  background-color: #fefce8 !important;
+}
+
+.my-nav {
+  border-bottom: 1px solid #1e1e1e22;
+}
+
+.home-container {
+  --background-rgb: 239, 242, 249;
+  background-color: rgb(var(--background-rgb));
+}
+
+.my-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.my-bg-blur {
+  /* background-image: url('images/bg5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: #60a5fa;
+}
+
+.resume-bg {
+  background-image: url('images/resume2.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.collapse[open].collapse-arrow>.collapse-title:after,
+.collapse-open.collapse-arrow>.collapse-title:after,
+.collapse-arrow:focus:not(.collapse-close)>.collapse-title:after,
+.collapse-arrow:not(.collapse-close)>input[type=checkbox]:checked~.collapse-title:after,
+.collapse-arrow:not(.collapse-close)>input[type=radio]:checked~.collapse-title:after {
+  color: white;
+}
+
+.bg-image {
+  background-image: url('images/one.png');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: right;
+}
+
+.g-image {
+  background-image: url('images/one.png');
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: right;
+  z-index: 1000;
+}
+
+.dashed-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.dashed-line {
+  flex: 1;
+  height: 1px;
+  background: #f59e0b;
+  margin: 0 10px;
+}
+
+.dashed-text {
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+}
+
+
+.active-tab {
+  background-color: #93c5fd;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.m-opacity {
+  background-color: #f59f0bc5;
+}
+
+.m-bg {
+  background-image: url('images/cv-4-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.m-line {
+  line-height: 8px;
+}
+
+.page-br {
+  page-break-after: always;
+}
+
+.my-font-two {
+  font-family: "Playfair Display", serif !important;
+}
+
+.cover-letter-padding {
+  padding-left: 16%;
+  padding-right: 16%;
+}
+
+
+.cover-letter-padding-other {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+
+.my-gradient {
+  background: linear-gradient(302deg, rgba(245, 217, 91, 1) 0%, rgba(116, 249, 243, 1) 100%);
+}
+
+.skeleton {
+  background-image: linear-gradient(105deg, transparent 0%, transparent 40%, hsl(200, 20%, 80%) 50%, transparent 60%, transparent 100%);
+}
+
+
+.collapse[open].collapse-arrow>.collapse-title:after, .collapse-open.collapse-arrow>.collapse-title:after, .collapse-arrow:focus:not(.collapse-close)>.collapse-title:after, .collapse-arrow:not(.collapse-close)>input[type=checkbox]:checked~.collapse-title:after, .collapse-arrow:not(.collapse-close)>input[type=radio]:checked~.collapse-title:after {
+  color: black !important;
+}
+
+
+.colapse[open].collapse-arrow>.collapse-title:after, .collapse-open.collapse-arrow>.collapse-title:after, .collapse-arrow:focus:not(.collapse-close)>.collapse-title:after, .collapse-arrow:not(.collapse-close)>input[type=checkbox]:checked~.collapse-title:after, .collapse-arrow:not(.collapse-close)>input[type=radio]:checked~.collapse-title:after {
+  color: #22c55ea8 !important;
+}
+
+.site-two-bg {
+  background-color: #22c55e;
+  background-position: 60%;
+}
+
+.active-tab-site {
+  border-bottom: 2px solid #5b21b6;
+  outline: none;
+}
+
+.my-hero {
+  background-image: url('images/new-prof.jpg');
+}
